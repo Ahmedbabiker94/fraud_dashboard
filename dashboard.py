@@ -9,7 +9,7 @@ st.set_page_config(page_title="Fraud Detection Dashboard", layout="wide")
 # Load data and model
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/creditcard.csv")
+    return pd.read_csv("data/creditcard_sample.csv")
 
 @st.cache_resource
 def load_model():
